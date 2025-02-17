@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/Products
+    username: root
+    password: Sebitas2515
+  jpa:
+    hibernate:
+      ddl-auto: update
