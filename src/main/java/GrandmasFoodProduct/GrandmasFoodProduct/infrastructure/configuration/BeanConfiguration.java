@@ -10,8 +10,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+
 @RequiredArgsConstructor
+@Configuration
 public class BeanConfiguration {
 
     private final IProductRepository productRepository;
@@ -26,5 +27,9 @@ public class BeanConfiguration {
     public IProductPersistencePort productPersistencePort() {
         return new ProductJpaAdapter(productRepository, productEntityMapper);
     }
+
+
+
+
 
 }
